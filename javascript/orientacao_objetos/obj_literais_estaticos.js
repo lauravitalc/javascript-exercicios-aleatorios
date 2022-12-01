@@ -59,6 +59,7 @@ let objeto = {
 
 objeto.exibirResumo();
 
+// ------------------------------------------------------------
 
 let teste = {
     nome: 'Luisa',
@@ -71,3 +72,42 @@ teste.nome = 'Julia'
 teste.idade = 34
 
 console.log(teste)
+
+// ------------------------------------------------------------
+
+let teste2 = {
+    nome: 'Maria',
+    idade: 24
+}
+
+console.log(teste2)
+
+teste2.sexo = 'Feminino'
+
+console.log(teste2)
+
+teste2.dizerOi = () => console.log('Oi')
+
+teste2.dizerOi()
+
+// ------------------------------------------------------------
+
+let assinatura = {
+    idCliente: 100,
+    descricao: 'Acesso a internet',
+    status(){
+        console.log('Ativo')
+    }
+}
+
+console.log(assinatura.descricao)
+
+let y = assinatura // variavel y recebe uma referencia
+
+console.log(y.descricao)
+
+y.descricao = 'Internet + TV + Telefone'
+
+console.log(y.descricao)
+console.log(assinatura.descricao)
+
